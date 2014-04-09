@@ -31,6 +31,7 @@ class TadeuRodrigues_Braspress_Model_Carrier_Default extends Mage_Shipping_Model
 	}
 
     if($this->getConfigData('weight_type') == 2){
+    	// Está correto? Ou seria /1000
         $Weight = $request->getPackageWeight()/10000;
     }else{
         $Weight = $request->getPackageWeight();
